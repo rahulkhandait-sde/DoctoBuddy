@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+    <style>
+      label{
+        letter-spacing: 0.15rem;
+      }
+      .form-con{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* border: 1px solid black; */
+      }
+      form{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        padding: 1.5rem;
+        border: 1px solid aliceblue;
+        background-color: aliceblue;
+        border-radius: 5px;
+      }
+      .sel-con{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* border: 1px solid black; */
+
+        /* justify-content: space-between; */
+      }
+      #btn{
+        width: 100px;
+        height: 2rem;
+        background-color: blue;
+        border: 1px solid blue;
+        border-radius: 5px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1rem
+      }
+      #btn-con{
+        display: flex;
+        /* flex-direction: row; */
+        justify-content: center;
+        /* color: red; */
+        width: 100%;
+      }
+      a{
+        color: #ffffff;
+      }
+      .elm{
+        margin-bottom: 2rem;
+      }
+      #app{
+        width: 100%;
+        height: 2rem;
+        display: block;
+        text-align: center;
+        font-size: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-con">
+      <h1>Book Appointment</h1>
+      <form>
+        <div class="elm">
+          <label>Name: </label><input type="text" id="username">
+        </div>
+        <div class="elm">
+          <label>Phone: </label><input type="number", id="phone">
+        </div>
+        <div class="sel-con elm">
+          <div class="elm">
+            <label>Choose Doctors: </label>
+          </div>
+          <div style="width: 100%">
+            <select id="app" name="app"></select>
+          </div>
+        </div>
+        <div id="btn-con" class="elm">
+          <div id="btn"><a>Submit</a></div>
+        </div>
+      </form>
+      <h3 id="showID"></h3>
+      <h3 id="showNumber"></h3>
+    </div>
+    <script>
+      const select = document.getElementById("app");
+      document.addEventListener("DOMContentLoaded", op);
+      function op(){
+        google.script.run.withSuccessHandler(showOptions).loadOptions();
+        function showOptions(options){
+          // console.log(options);
+          options.forEach((option) => {
+            let o = new Option(option, option);
+            select.add(o);
+          });
+        }
+        // options.forEach((option) => {
+            // let o = new Option(option, option);
+            // select.add(o);
+        // });
+      }
+      document.getElementById("btn").addEventListener("click",dos1);
+      function  dos1(){
+        var name = document.getElementById("username").value;
+        var phone = document.getElementById("phone").value;
+        var selected = document.getElementById("app").value;
+        google.script.run.withSuccessHandler(showData).dos(name, phone, selected);
+      }
+      function showData(data){
+        console.log(data);
+        document.getElementById("showID").innerHTML = "Your ID is: " + data[0];
+        document.getElementById("showNumber").innerHTML = "Your Number is: " + data[1];
+      }
+    </script>
+  </body>
+</html>

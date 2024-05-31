@@ -1,0 +1,437 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Germania+One&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Teko:wght@300..700&family=Truculenta:opsz,wght@12..72,100..900&display=swap");
+* {
+  text-decoration: none;
+  margin: 0;
+  cursor: pointer;
+}
+
+html {
+  overflow-x: hidden;
+  background-color: black;
+}
+
+section {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.heading {
+  font-family: "Bebas Neue", sans-serif;
+  margin: 2rem;
+  padding: 1rem;
+  border-radius: 2rem;
+  font-size: 3.5rem;
+  color: white;
+  border-bottom: 2px solid gray;
+  background-color: #101010;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.section1 {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+.section1 .container1,
+.section1 .container2 {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section1 .container1 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.section1 .container1 .title {
+  color: white;
+  border-radius: 2rem;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  font-size: 5rem;
+  padding: 2rem 4rem;
+  font-family: "Bebas Neue", sans-serif;
+  margin: 2rem;
+}
+.section1 .container2 {
+  display: flex;
+  flex-direction: column;
+}
+.section1 .container2 .btn {
+  transition: all 0.3s ease-out;
+  margin: 1rem;
+  color: white;
+  background-color: rgba(43, 43, 43, 0.278);
+  border: 1px solid rgb(59, 59, 59);
+  padding: 1rem;
+  width: 25rem;
+  border-radius: 1rem;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: rgba(41, 81, 227, 0.877);
+}
+.section1 .container2 .btn a {
+  color: white;
+}
+.section1 .container2 .btn:hover {
+  border: 1px solid white;
+  background-color: rgba(4, 52, 224, 0.877);
+  transform: 0.5s;
+}
+
+.section2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+  gap: 2rem;
+}
+.section2 .box {
+  background-color: rgba(41, 40, 40, 0.5137254902);
+  border-right: 3px solid rgb(47, 46, 46);
+  border-bottom: 10px solid rgba(62, 61, 61, 0.4);
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 1.5rem;
+  text-align: center;
+}
+.section2 .box i {
+  color: white;
+  font-size: 2.5rem;
+  margin: 2rem;
+}
+.section2 .box h3 {
+  color: white;
+  font-size: 1.5rem;
+}
+.section2 .box p {
+  color: white;
+  font-size: 1rem;
+  text-align: justify;
+  margin: 1rem;
+}
+.section2 .box .btn {
+  transition: all 0.3s ease-out;
+  margin: 1rem;
+  color: white;
+  background-color: rgba(43, 43, 43, 0.278);
+  border: 1px solid rgb(59, 59, 59);
+  padding: 1rem;
+  width: 15rem;
+  border-radius: 1rem;
+  text-align: center;
+  font-size: 1rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: rgba(41, 81, 227, 0.877);
+  margin: 2rem;
+}
+.section2 .box .btn a {
+  color: white;
+}
+.section2 .box .btn:hover {
+  border: 1px solid white;
+  background-color: rgba(4, 52, 224, 0.877);
+  transform: 0.5s;
+}
+
+.section3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+  gap: 2rem;
+  align-items: center;
+}
+.section3 .image {
+  padding: 7rem;
+  border-radius: 2rem;
+}
+.section3 .image img {
+  height: 100%;
+  width: 100%;
+}
+.section3 .box {
+  border-radius: 2rem;
+  text-align: center;
+  border-right: 2px solid rgb(53, 53, 53);
+  border-bottom: 4px solid rgb(53, 53, 53);
+  border-top: 1px solid rgb(53, 53, 53);
+  border-left: 1px solid rgb(53, 53, 53);
+}
+.section3 .box h2 {
+  color: white;
+  margin: 2rem;
+  font-size: 2rem;
+}
+.section3 .box p {
+  color: white;
+  font-size: 1.5rem;
+  text-align: justify;
+  padding: 2rem 2rem;
+  background-color: #323131;
+  margin: 2rem 2rem;
+  border-radius: 1.5rem;
+}
+
+.section4 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 2rem;
+  text-align: center;
+}
+.section4 .box {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+  padding: 2rem;
+  border-right: 2px solid rgb(53, 53, 53);
+  border-bottom: 4px solid rgb(53, 53, 53);
+  background-color: rgba(32, 30, 30, 0.5254901961);
+  border-radius: 1.5rem;
+}
+.section4 .box img {
+  height: 100%;
+  width: 100%;
+  border-radius: 2rem;
+}
+.section4 .box h3 {
+  color: white;
+  font-weight: 800;
+  margin-top: 1rem;
+}
+.section4 .box span {
+  color: rgb(230, 246, 0);
+  margin: 1rem;
+}
+.section4 .box .share a {
+  color: white;
+}
+
+.section5 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 6rem;
+  text-align: center;
+  margin: 0rem 10rem;
+}
+.section5 .box img {
+  height: 60%;
+  width: 100%;
+  border-radius: 50%;
+}
+.section5 .box h3, .section5 .box .stars, .section5 .box p {
+  color: white;
+}
+.section5 .box h3, .section5 .box p {
+  margin: 1rem;
+}
+.section5 .box p {
+  text-align: justify;
+  padding: 1rem;
+  background-color: #101010;
+  border-radius: 2rem;
+  border-right: 2px solid rgb(53, 53, 53);
+  border-bottom: 4px solid rgb(53, 53, 53);
+}
+
+/* Designing footer */
+.footer .box-container {
+  margin-top: 10rem;
+  background-color: #101010;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  padding-left: 2rem;
+  gap: 2rem;
+}
+.footer .box-container .box h3 {
+  font-size: 2.5rem;
+  color: white;
+  padding: 1rem 0;
+}
+.footer .box-container .box a {
+  display: block;
+  font-size: 1rem;
+  color: white;
+  padding: 1rem 0;
+}
+.footer .box-container .box a:hover i {
+  padding-right: 2rem;
+}
+.footer .box-container .box a i {
+  padding-right: 0.5rem;
+  color: white;
+}
+
+.header {
+  padding: 2rem 9%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #000000;
+  color: white;
+  border-bottom: 2px solid rgba(44, 44, 44, 0.384);
+  border-radius: 1rem;
+}
+.header .logo {
+  color: white;
+  font-size: 2rem;
+  font-family: "Bebas Neue", sans-serif;
+}
+.header .navbar a {
+  font-size: 1.2rem;
+  color: white;
+  margin-left: 2rem;
+  transition: all 0.3s ease-out;
+}
+.header .navbar a:hover {
+  transition: all 0.3s ease-out;
+  color: rgb(165, 162, 162);
+}
+
+#menu-btn {
+  font-size: 2.5rem;
+  border-radius: 0.5rem;
+  background: #303030;
+  color: white;
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+  .header {
+    padding: 2rem;
+  }
+  .section {
+    padding: 2rem;
+  }
+}
+@media (max-width: 768px) {
+  #menu-btn {
+    display: initial;
+  }
+  .header .navbar {
+    position: absolute;
+    top: 115%;
+    right: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: var(--box-shadow);
+    width: 30rem;
+    border: var(--border);
+    background: #282727;
+    transform: scale(0);
+    opacity: 0;
+    transform-origin: top right;
+    transition: none;
+    color: white;
+  }
+  .header .logo {
+    font-size: 3rem;
+  }
+  .header .navbar.active {
+    transform: scale(1);
+    opacity: 1;
+    transition: 0.4s ease-out;
+  }
+  .header .navbar a {
+    font-size: 2rem;
+    display: block;
+    margin: 2.5rem;
+  }
+  .section1 {
+    flex-direction: column;
+  }
+  .section1 .container1,
+  .section1 .container2 {
+    width: 100%;
+    display: flex;
+  }
+  .section1 .container1 {
+    justify-content: center;
+    height: 100vw;
+  }
+  .section1 .container1 .title {
+    color: white;
+    border-radius: 2rem;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    font-size: 15vw;
+    padding: 2rem 4rem;
+    font-family: "Bebas Neue", sans-serif;
+    margin: 2rem;
+  }
+  .section1 .container2 {
+    flex-direction: column;
+  }
+  .section1 .container2 .btn {
+    margin: 1rem;
+    width: 80vw;
+    border-radius: 1rem;
+    text-align: center;
+    font-size: 2rem;
+  }
+  .footer .box-container .box h3 {
+    font-size: 2.5rem;
+  }
+  .footer .box-container .box a {
+    font-size: 1.5rem;
+    color: rgb(199, 199, 199);
+  }
+  .section5 {
+    gap: 10rem;
+    margin: 0rem 6rem;
+  }
+  .section5 .box img {
+    height: 60%;
+  }
+  .section5 .box h3 {
+    font-size: 3rem;
+  }
+  .section5 .box .stars {
+    font-size: 2rem;
+  }
+  .section5 .box p {
+    font-size: 1.5rem;
+    text-align: justify;
+    padding: 1rem;
+    background-color: #101010;
+    border-radius: 2rem;
+    border-right: 2px solid rgb(53, 53, 53);
+    border-bottom: 4px solid rgb(53, 53, 53);
+  }
+  .section4 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 2rem;
+    text-align: center;
+  }
+  .section4 .box {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    padding: 2rem;
+    border-right: 2px solid rgb(53, 53, 53);
+    border-bottom: 4px solid rgb(53, 53, 53);
+    background-color: rgba(32, 30, 30, 0.5254901961);
+    border-radius: 1.5rem;
+  }
+  .section4 .box h3 {
+    font-size: 2.5rem;
+  }
+  .section4 .box span {
+    font-size: 2rem;
+  }
+  .section4 .box .share {
+    font-size: 2rem;
+  }
+  .section4 .box .share a {
+    margin: 0rem 1rem;
+  }
+}/*# sourceMappingURL=style.css.map */

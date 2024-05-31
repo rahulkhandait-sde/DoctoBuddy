@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+    <?!= include("style"); ?>
+
+  </head>
+  <body>
+    <div>
+      
+      <h1 style="text-align: center">Sign In</h1>
+      <div class="form-con">
+        <form>
+          <div class="elm">
+            <label>Id: </label><input type="text" id="id">
+          </div>
+          <div class="elm">
+            <label>Password: </label><input type="password" id="pass">
+          </div>
+          
+          <div class="btn-con">
+            <div id="btn"><a>Sign in</a></div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div id="loader" class="center"></div>
+    <div>
+      <table id="table" class="table">
+				<!-- TABLE DATA IS ADDED BY THE showData() JAVASCRIPT FUNCTION ABOVE -->
+        <thead>
+        <tr>
+          <th>Patient Name</th>
+          <th>Appointment Date</th>
+          <th>Patient ID</th>
+          <th>Phone</th>
+          <th>Checked</th>
+        </tr>
+      </thead>
+      <tbody id="table-body">
+        
+      </tbody>
+			</table>
+      <div id="next-btn-con">
+        <div id="next-btn">
+          <a>Next</a>
+        </div>
+      </div>
+    </div>
+    <?!= include("script"); ?>
+  </body>
+</html>

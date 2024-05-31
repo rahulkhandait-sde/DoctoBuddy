@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+    <?!= include("style"); ?>
+  </head>
+  <body>
+    <div class="t-con">
+      <h1>Track Your Application</h1>
+      <form>
+        <div class="elm">
+          <label>Id: </label><input type="text" id="id">
+        </div>
+        <div class="elm">
+          <label>Name: </label><input type="text" id="name">
+        </div>
+        <div class="sel-con elm">
+          <div class="elm">
+            <label>Choose Doctors: </label>
+          </div>
+          <div style="width: 100%">
+            <select id="app" name="app"></select>
+          </div>
+        </div>
+        <div class="btn-con">
+          <div id="btn"><a>Show Status</a></div>
+        </div>
+      </form>
+      <table id="table">
+          <thead>
+            <tr>
+              <td>Patient Name</td>
+              <td>Appointment Date</td>
+              <td>Patient ID</td>
+              <td>Phone</td>
+              <td>Checked</td>
+            </tr>
+          </thead>
+      </table>
+    </div>
+    <?!= include("script"); ?>
+  </body>
+</html>

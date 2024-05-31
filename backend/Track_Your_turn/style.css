@@ -1,0 +1,61 @@
+
+  #data-con{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: aliceblue;
+    visibility: hidden;
+  }
+  input, label{
+    margin-bottom: 2rem;
+  }
+  label{
+    letter-spacing: 0.1rem;
+  }
+  .form-con{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      /* border: 1px solid black; */
+    }
+    form{
+      display: flex;
+      flex-direction: column; 
+      align-items: end;
+      background-color: aliceblue;
+      border: 1px solid aliceblue;
+      border-radius: 5px;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      /* padding-right: 0; */
+      padding: 2rem;
+    }
+  #btn{
+      width: 100px;
+      height: 2rem;
+      background-color: blue;
+      border: 1px solid blue;
+      border-radius: 5px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1rem
+  }
+    a{
+      width: 100%;
+      text-decoration: none;
+      color: white;
+      display: block;
+      text-align: center;
+    }
+  .btn-con{
+      display: flex;
+      /* flex-direction: row; */
+      justify-content: center;
+      /* color: red; */
+      width: 100%;
+      /* margin-top: 1rem; */
+  }

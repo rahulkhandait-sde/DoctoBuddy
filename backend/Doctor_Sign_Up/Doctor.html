@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+    <?!= include("style"); ?>
+  </head>
+  <body>
+    <div>
+      <h1 style="text-align: center">Sign Up</h1>
+      <div class="form-con">
+        <form>
+          <div class="elm">
+            <label>Name: </label><input type="text" id="name">
+          </div>
+          <div class="elm">
+            <label>Password: </label><input type="password" id="pass">
+          </div>
+          <div class="elm">
+            <label>Email: </label><input type="email" id="email">
+          </div>
+          <div class="elm">
+            <label>Phone: </label><input type="number" id="phone">
+          </div>
+          <div class="btn-con">
+            <div id="btn"><a>Sign Up</a></div>
+            <a style="color: red" href="https://script.google.com/macros/s/AKfycby_i9wibLg8mBXemt6tyW1oE3xL9xjFWRJojd5U8X0O/dev">login instead</a>
+          </div>
+        </form>
+      </div>
+    </div>
+    <?!= include("script"); ?>
+  </body>
+</html>
