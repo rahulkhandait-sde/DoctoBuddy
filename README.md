@@ -39,7 +39,7 @@ To get a local copy up and running follow these simple example steps.
 1. Clone the repo
 
 ```
- git clone https://github.com/Gourab2005/DoctoBuddy.git
+ git clone https://github.com/rahulkhandait-sde/DoctoBuddy.git
 ```
 
 2. Open the **index.html** file
