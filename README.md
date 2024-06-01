@@ -21,7 +21,7 @@ This project is a testament to the power of innovation within Digital India.  Le
 
 ## Doctobuddy Tech Stack
 
-* Frontend: HTML, SCSS, JavaScript, GSAP
+* Frontend: HTML, SCSS, JavaScript, GSAP, Shepherd
 * Backend: Google Apps Script
 
 ## Getting Started 👩‍💻
