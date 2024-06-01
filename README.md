@@ -19,6 +19,9 @@
 
 This project is a testament to the power of innovation within Digital India.  Let's work together to make healthcare experiences smoother, less stressful, and more efficient for everyone! 
 
+## Demo
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/rnsy2KlMoCs/0.jpg)](https://www.youtube.com/watch?v=rnsy2KlMoCs)
+
 ## Doctobuddy Tech Stack
 
 * Frontend: HTML, SCSS, JavaScript, GSAP, Shepherd
