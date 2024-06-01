@@ -7,7 +7,7 @@
 
 html {
   overflow-x: hidden;
-  background-color: black;
+  background-color: rgb(101, 86, 63);
 }
 
 section {
@@ -20,10 +20,10 @@ section {
   margin: 2rem;
   padding: 1rem;
   border-radius: 2rem;
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   color: white;
   border-bottom: 2px solid gray;
-  background-color: #101010;
+  background-color: #dd7600;
   text-align: center;
   margin-top: 4rem;
 }
@@ -32,6 +32,11 @@ section {
   display: flex;
   flex-direction: row;
   height: 100vh;
+  width: 100vw;
+  background-image: url(./images/hero-image.png);
+  background-size: cover;
+  margin-left: 0;
+  margin-right: 0;
 }
 .section1 .container1,
 .section1 .container2 {
@@ -63,7 +68,6 @@ section {
   transition: all 0.3s ease-out;
   margin: 1rem;
   color: white;
-  background-color: rgba(43, 43, 43, 0.278);
   border: 1px solid rgb(59, 59, 59);
   padding: 1rem;
   width: 25rem;
@@ -71,14 +75,14 @@ section {
   text-align: center;
   font-size: 1.5rem;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  background-color: rgba(41, 81, 227, 0.877);
+  background-color: rgba(224, 121, 12, 0.877);
 }
 .section1 .container2 .btn a {
   color: white;
 }
 .section1 .container2 .btn:hover {
   border: 1px solid white;
-  background-color: rgba(4, 52, 224, 0.877);
+  background-color: rgba(23, 77, 194, 0.535);
   transform: 0.5s;
 }
 
@@ -123,7 +127,8 @@ section {
   text-align: center;
   font-size: 1rem;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  background-color: rgba(41, 81, 227, 0.877);
+  background-color: rgba(224, 121, 12, 0.877);
+
   margin: 2rem;
 }
 .section2 .box .btn a {
@@ -131,7 +136,7 @@ section {
 }
 .section2 .box .btn:hover {
   border: 1px solid white;
-  background-color: rgba(4, 52, 224, 0.877);
+  background-color: rgba(23, 97, 194, 0.535);
   transform: 0.5s;
 }
 
@@ -195,15 +200,19 @@ section {
 }
 .section4 .box h3 {
   color: white;
+  font-size: 1.8rem;
   font-weight: 800;
   margin-top: 1rem;
 }
 .section4 .box span {
   color: rgb(230, 246, 0);
   margin: 1rem;
+  font-size: 1.3rem;
 }
 .section4 .box .share a {
   color: white;
+  margin: 0rem 1rem;
+  font-size: 2rem;
 }
 
 .section5 {
@@ -227,7 +236,7 @@ section {
 .section5 .box p {
   text-align: justify;
   padding: 1rem;
-  background-color: #101010;
+  background-color: #4e4e1a;
   border-radius: 2rem;
   border-right: 2px solid rgb(53, 53, 53);
   border-bottom: 4px solid rgb(53, 53, 53);
@@ -236,10 +245,10 @@ section {
 /* Designing footer */
 .footer .box-container {
   margin-top: 10rem;
-  background-color: #101010;
+  background-color: #3b3636c6;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-  padding-left: 2rem;
+  padding-left: 3rem;
   gap: 2rem;
 }
 .footer .box-container .box h3 {
@@ -249,9 +258,9 @@ section {
 }
 .footer .box-container .box a {
   display: block;
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: white;
-  padding: 1rem 0;
+  padding: 1rem;
 }
 .footer .box-container .box a:hover i {
   padding-right: 2rem;
@@ -271,25 +280,25 @@ section {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #000000;
+  background: #7a4603;
   color: white;
   border-bottom: 2px solid rgba(44, 44, 44, 0.384);
-  border-radius: 1rem;
 }
 .header .logo {
   color: white;
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-family: "Bebas Neue", sans-serif;
 }
 .header .navbar a {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: white;
   margin-left: 2rem;
   transition: all 0.3s ease-out;
+  font-weight: 600;
 }
 .header .navbar a:hover {
   transition: all 0.3s ease-out;
-  color: rgb(165, 162, 162);
+  color: rgb(142, 129, 129);
 }
 
 #menu-btn {
@@ -401,7 +410,7 @@ section {
     font-size: 1.5rem;
     text-align: justify;
     padding: 1rem;
-    background-color: #101010;
+    background-color: #a71515;
     border-radius: 2rem;
     border-right: 2px solid rgb(53, 53, 53);
     border-bottom: 4px solid rgb(53, 53, 53);
