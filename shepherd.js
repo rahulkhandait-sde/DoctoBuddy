@@ -28,7 +28,7 @@ tour.addStep({
 
 tour.addStep({
 	id: "step2",
-	title: "📅 Schedule Appointments with Ease",
+	title: "📅 Schedule Appointments",
 	text: "Book appointments online with just a few clicks. Skip the wait times and manage your schedule conveniently.",
 	attachTo: {
 		element: ".section1 .container2 .btn.entry1",
